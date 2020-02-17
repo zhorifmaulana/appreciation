@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from './firework.png';
+import logo from './firework.svg';
 import '../App.css';
 import Button from './button';
 import {Link} from 'react-router-dom';
