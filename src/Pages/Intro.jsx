@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from './firework.svg';
+import logo from './logoawal.png';
 import '../App.css';
 import Button from './button';
 import {Link} from 'react-router-dom';
@@ -18,7 +18,7 @@ function Intro() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Sebuah usaha agar tulisan yang tidak terbaca menjadi terbaca :v
+          Sebuah portal dukungan untuk mereka yang sedang berjuang :v
         </p>
         <Link to = '/Afeksi'>
         <Button>OPEN</Button>
