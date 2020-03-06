@@ -1,28 +1,32 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import {Link} from 'react-router-dom';
 
 import { Navbar, Nav, NavDropdown, Form,  FormControl, Button, Table} from 'react-bootstrap';
 function Home() {
-  return
-    <div className="App">
+  return (
+    <div className="Home">
       <header>
         <Navbar expand="lg" variant="dark" bg="dark">
-          <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
+          <Navbar.Brand href="#home">Appreciation</Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
               <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="mr-auto">
+                //<Link to = '/Intro'>
                   <Nav.Link href="#home">Home</Nav.Link>
-                  <Nav.Link href="#link">Link</Nav.Link>
-                  <NavDropdown title="Dropdown" id="basic-nav-dropdown">
-                    <NavDropdown.Item>Action</NavDropdown.Item>
-                    <NavDropdown.Item>Another action</NavDropdown.Item>
-                    < NavDropdown.Item>Something</NavDropdown.Item>
+                //</Link>
+                  <NavDropdown title="Events" id="basic-nav-dropdown">
+                    < NavDropdown.Item>Life in General</NavDropdown.Item>
+                    < NavDropdown.Item>Organization/Committee</NavDropdown.Item>
+                    <NavDropdown.Item>Sidang Skripsi</NavDropdown.Item>
+                    <NavDropdown.Item>Sidang Proposal</NavDropdown.Item>
+                    < NavDropdown.Item>Fit and Proper Test</NavDropdown.Item>
                     <NavDropdown.Divider />
-                    <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
+                    <NavDropdown.Item href="#action/3.4">Other</NavDropdown.Item>
                 </NavDropdown>
               </Nav>
               <Form inline>
-                <FormControl type="text" placeholder="Search" className="mr-sm-2" />
+                <FormControl type="text" placeholder="I'd like to search..." className="mr-sm-2" />
                 <Button variant="outline-success">Search</Button>
               </Form>
           </Navbar.Collapse>
@@ -37,7 +41,9 @@ function Home() {
                     <p className="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse necessitatibus neque.</p>
                   </div>
                   <div className="card-footer">
+                    <Link to = '/Afeksi'>
                     <Button variant="btn btn-primary">Learn More</Button>
+                    </Link>
                   </div>
               </div>
             </div>

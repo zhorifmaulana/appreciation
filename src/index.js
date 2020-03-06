@@ -1,8 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
+//import Navigation from './Components/Navigation/Navigation'
 import App from './App';
+//import Intro from './Pages/Intro'
+
 import * as serviceWorker from './serviceWorker';
+import 'tachyons';
 
 ReactDOM.render(<App />, document.getElementById('root'));
 
